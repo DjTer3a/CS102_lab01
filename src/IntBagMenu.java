@@ -8,7 +8,7 @@ public class IntBagMenu {
 
         do{
             System.out.println("1 Create a new empty collection(any previous values are lost!)");
-            System.out.println("2 Read a set of positive values into the collection (use zero to indicate all the values have been entered.)");
+            System.out.println("2 Read a set of positive values into the collection (use zero to indicate all the values have been entered2)");
             System.out.println("3 Print the collection of values.");
             System.out.println("4 Add a value to the collection of values at a specified location");
             System.out.println("5 Remove the value at a specified location from the collection of values");
@@ -25,14 +25,13 @@ public class IntBagMenu {
                 while(number != 0){
                     if (number <0){
                         System.out.println("Negative integers not accepted");
-                        number =0;
+                        number = 0;
                     }
-                    else{
+                    else
                         test.add(number);
                         number = scan.nextInt();
                     }
                 }
-            }
             else if(choice == 3){
                 System.out.println(test);
             }

@@ -113,7 +113,7 @@ public class IntBag {
                 }
             }
             else{
-                if (this.bag[i] == -999){
+                if (this.bag[i] == -999 || this.bag[i] == 0 ){
                     output += "";
                 }
                 else{
