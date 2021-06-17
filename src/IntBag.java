@@ -105,10 +105,21 @@ public class IntBag {
 
         for(int i =0; i < this.bag.length; i++){
             if (i==this.bag.length-1){
+                if (this.bag[i] == -999){
+                    output += "end";
+                }
+                else{
                 output+= this.bag[i];
+                }
             }
             else{
-                output += this.bag[i]+ " , "; 
+                if (this.bag[i] == -999){
+                    output += "";
+                }
+                else{
+                    output += this.bag[i]+ " , "; 
+                }
+                
             }
         }
         return output;
