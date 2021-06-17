@@ -3,7 +3,7 @@ import java.util.*;
 public class IntBagMenu {
     public static void main (String [] args) {
         Scanner scan = new Scanner(System.in);
-        IntBag test;
+        IntBag test = null;
         int choice;
 
         do{
@@ -14,6 +14,7 @@ public class IntBagMenu {
             System.out.println("5 Remove the value at a specified location from the collection of values");
             System.out.println("6 Remove all instances of a value within the collection");
             System.out.println("7 Quit the program.");
+            choice = scan.nextInt();
 
             if(choice == 1){
                 test= new IntBag(4);
@@ -65,4 +66,5 @@ public class IntBagMenu {
         while(choice !=7);
         System.out.println("Have a good day and thanks for using this program!!!");
 
+    }
 }
