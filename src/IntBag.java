@@ -90,7 +90,20 @@ public class IntBag {
             this.bag[arraySize()-1] = -999;
         }
         else{
-            System.out.println("Enter the correct parameters!!!!");
+
+            int temp[];
+            temp = new int[this.bag.length*2];
+
+            for(int i=0; i<this.bag.length;i++){
+
+                temp[i]=this.bag[i];
+            }
+            this.bag = temp;
+            this.bag[Idx] = Number;
+            for(int i = bag.length-2; i>=Idx; i--){
+                this.bag[i+1]= this.bag[i];
+            }
+            this.bag[arraySize()-1] = -999;
         }
     }
 
