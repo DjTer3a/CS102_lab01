@@ -16,6 +16,8 @@ public class fortyFibonacci {
         int temp =0;
         int temp1 =1;
         int result;
+        IntBag bag = null;
+        bag = new IntBag(41);
         System.out.println("The first 40 fibonnaci numbers are as follows :- ");
         
 
@@ -27,7 +29,9 @@ public class fortyFibonacci {
             result = temp+temp1;
             temp=temp1;
             temp1=result;
-            System.out.println(result);
+            bag.add(result,i-2);
+            
         }
+        System.out.println("0 , " + bag.toString());
     }
 }
